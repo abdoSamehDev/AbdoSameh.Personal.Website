@@ -1,0 +1,204 @@
+html {
+  background-color: #06284b;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2,
+button {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  color: white;
+}
+
+button {
+  color: white;
+  background-color: transparent;
+  border: 0;
+  padding: 5px;
+}
+
+#page1 {
+  height: 100vh;
+}
+
+.home {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 70% 30%;
+
+  /* justify-items: flex-end; */
+
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  grid-area: 1/1/2/-1;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.background-img {
+  grid-area: 1/1/-1/-1;
+  height: 100vh;
+}
+
+.page-img {
+  height: 100%;
+  width: 100%;
+  opacity: 10%;
+  mix-blend-mode: overlay;
+  object-fit: cover;
+}
+
+.intro,
+.avatar {
+  height: 100%;
+  grid-column: span 6;
+}
+
+.intro {
+  grid-area: 1/1/2/6;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.avatar {
+  grid-area: 1/-1/2/7;
+  margin-right: 10px;
+}
+
+.profile-img {
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+
+.my-name {
+  font-family: "Kalam", cursive;
+  color: #0ad1f2;
+}
+
+.button {
+  display: flex;
+  background-color: #00bfff;
+  border: 0;
+  border-radius: 20px;
+  height: 75px;
+  width: 60%;
+  padding: 5px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.my-details {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  margin: 50px 10px 0 10px;
+}
+
+.education,
+.work,
+.skills,
+.projects,
+.get-in-touch,
+.footer {
+  grid-column: span 12;
+}
+
+.pro,
+.pxivision,
+.date,
+.education-title,
+.work-title,
+.passapp-title,
+.cartiva-title,
+.skills-title,
+.muslim-app-title,
+.find-wi-title,
+.get-in-touch-title {
+  color: #0ad1f2;
+}
+
+.skill-logos {
+  grid-area: 2/1/-1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-logo {
+  height: 200px;
+}
+
+.get-in-touch-button {
+  display: flex;
+  background-color: #00bfff;
+  border: 0;
+  border-radius: 20px;
+  height: 75px;
+  width: 30%;
+  padding: 5px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer {
+  color: #06284b;
+  font-weight: 500;
+  height: 10vh;
+  background-color: #0ad1f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+.github,
+.linkedin,
+.twitter {
+  color: #06284b;
+  font-weight: 600;
+}
